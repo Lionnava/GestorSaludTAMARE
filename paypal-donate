@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Me via PayPal</title>
+</head>
+<body>
+    <h1>Thank you for your support!</h1>
+    <!-- Carga el SDK de PayPal -->
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAY4z3oZGf7DKN5CHBYJ3Hvg0NUBDlMUXUOexU3u1U6INH1pdDJPkTtTFfOj5j5idHm6QOb33y8pbSXrs&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+
+    <!-- Contenedor donde se renderizará el botón -->
+    <div id="paypal-container-7PXURAU88CUA2"></div>
+
+    <!-- Script para renderizar el botón -->
+    <script>
+        paypal.HostedButtons({
+            hostedButtonId: "7PXURAU88CUA2", // ID del botón proporcionado por PayPal
+        }).render("#paypal-container-7PXURAU88CUA2"); // Renderiza el botón en el contenedor
+    </script>
+</body>
+</html>
